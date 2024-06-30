@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="icon" href="/assets/logo.png" type="image/x-icon" />
+
+</head>
+
+<body>
+    <div class="container flex gap">
+        <section class="left flex flex-column gap">
+            <div class="upper flex border-radius margin-padding bg-dark-blue gap-l">
+                <img src="/assets/logo.png" class="logo">
+                <a href="/"><span class="flex items-center gap"><img src="/assets/home.svg"
+                            class="icon invert">Home</span></a>
+                <a href="/games"><span class="flex items-center gap"><img src="/assets/gameboy.svg"
+                            class="icon">Games</span></a>
+                <a href="/forum"><span class="flex items-center gap"><img src="/assets/forum.svg"
+                            class="icon">Forum</span></a>
+
+            </div>
+            <div class="lower flex margin-padding bg-dark-blue border-radius flex-column items-center gap-m">
+                <div class="flex gap items-center space-between full-width">
+                    <div class="flex items-center gap"><img src="/assets/library.svg" class="icon invert">Your Library
+                    </div><span><img src="/assets/add.svg" class="icon invert"></span>
+                </div>
+                <div class="bg-light-grey border-radius full-width padding flex flex-column">
+                    <h4 class="margin-left"><a href="/library">Liked Games</a></h4>
+                    <p class="margin-left" id="liked-game">You must be logged-in and add some games to library to see them.</p>
+                    <a href="/library" class="flex-end"><button class="margin-left">See more</button></a>
+                </div>
+                <div class="bg-light-grey border-radius full-width padding flex flex-column";>
+                    <h4 class="margin-left"><a href="/library">Played Games</a></h4>
+                    <p class="margin-left" id="played-game">You must be logged-in and add some games to library to see them.</p>
+                    <a href="/library" class="flex-end"><button class="margin-left">See more</button></a>
+                </div>
+                <div class="bg-light-grey border-radius full-width padding flex flex-column">
+                    <h4 class="margin-left"><a href="/library">To Play</a></h4>
+                    <p class="margin-left" id="to-play-game">You must be logged-in and add some games to library to see them.</p>
+                    <a href="/library" class="flex-end"><button class="margin-left">See more</button></a>
+                </div>
+                <div class="flex full-width font-small flex-column gap-l">
+                    <div class="flex flex-wrap gap-m">
+                        <span>Legal</span>
+                        <span> Safety & Privacy Center</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookies</span>
+                        <span>About Ads</span>
+                        <span>Accessiblity</span>
+                        <span>Cookies</span>
+                    </div>
+                    <div>
+                        <button class="flex items-center gap-xs bg-dark-blue"><img src="/assets/world.svg"
+                                class="icon-small invert">English</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="right border-radius bg-dark-blue">
+
+
+            <nav class="navbar full-width">
+                <ul class="flex space-between margin-right">
+                    <li>
+                        <img src="/assets/left.svg" class="icon-small img-border" onclick="history.back()">
+                        <img src="/assets/right.svg" class="icon-small img-border" onclick="history.forward()">
+                        </li>
+                        <li class="flex items-center">
+                            <button id="signup"><a href="/signup">Sign up</a></button>
+                            <button id="login"><a href="/login">Log in</a></button>
+                            <span id="user-info" class="flex"></span>
+                            <button id="logout">Logout</button>
+                            <img src="/assets/menu.svg" class="icon-small img-border menu">
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="games padding-l">
+                <div class="topic-details">
+                    <h1 id="topic_name"></h1>
+                    <small id="date_created"></small>
+                    <hr>
+                    <p id="description"></p>
+                    <hr>
+                    <p id="details"></p>
+                </div>
+                <h2>Comments</h2>
+                <div id="comments" class="flex flex-column gap"></div>
+                <div class="add-comment flex flex-column border-radius">
+                    <h3>Share your thoughts ;&RightAngleBracket;</h3>
+                    <form id="commentForm" class="flex space-between gap-l">
+                        <input type="text" id="comment" name="comment" required></input>
+                        <button type="submit">Add Comment</button>
+                </form>
+                </div>
+
+
+
+            </div>
+    </div>
+    </div>
+
+    </section>
+    </div>
+
+</body>
+<script src="/js/topic.js"></script>
+
+</html>

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.left{
+    height: 100vh;
+    width: 70vw;
+    background-image: url('/assets/john_marston.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: max(70vw, 900px);
+    opacity: 0.9;
+}
+
+.right{
+    height: 100vh;
+    width: 30vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-around;
+
+
+}
+
+.logo{
+    width: 300px;
+    align-self: center;
+}
+
+.greetings > *{
+    color: blueviolet;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.greetings>:first-child{
+    font-weight: 200;
+}
+
+.greetings>:nth-child(2){
+    font-weight: 1000;
+}
+
+
+.input > *{
+
+    height: 60px;
+    padding: 10px;
+    min-width: 350px;
+    max-width: 400px;
+
+}
+
+input:focus{
+    outline: 1px solid red;
+    border: none;
+}
+
+
+.button button{
+    padding: 20px 30px;
+    background-color: #ad3165;
+    border: none;
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-out 1ms;
+}
+
+.button a{
+    color: orange;
+}
+
+
+@media screen and (max-width:1400px) {
+    .left{
+        position: absolute;
+        width: 100vw;
+        opacity: 0.7;
+        background-size: cover;
+        
+    }
+    .right{
+        position: absolute;
+        background-color: white;
+        width: 40vw;
+        height: 90vh;
+        transform: translate(-170%, 6%);
+        box-shadow:5px 5px 3px;
+        }
+        .greetings > *{
+        font-size: 30px;
+    }
+    .button button{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:900px){
+    .logo{
+        width: 200px;
+    }
+    .greetings > *{
+        font-size: 30px;
+    }
+    .right{
+        width: 60vw;
+       transform: translate(-133%, 6%);
+    }
+    .input > *{
+        min-width: 200px;
+        max-width: 90%;
+        width: 300px;
+    }
+    .button button{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:522px) {
+    .right{
+        width: 70vw;
+       transform: translate(-120%, 6%);
+    }
+    .greetings > *{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .input > *{
+        height: 50px;
+        min-width: none;
+        max-width: 10px;
+
+    }     
+.right{
+    width: 80vw;
+    transform: translate(-112%, 5%);
+}
+    .button button{
+        font-size: 12px;
+    }  
+}
+
+

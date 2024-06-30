@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup to TheGameArray</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="/css/utility.css">
+</head>
+
+<body>
+    <main class="flex">
+        <div class="left"></div>
+    <form id="signup-form">
+    <div class="right flex flex-column ">
+        <div class="logo"><img src="/assets/logo.png" alt="TheGameArray" class="logo"></div>
+        <div class="greetings">
+            <div>Hello & Welcome,</div>
+            <span id="element"></span>
+        </div>
+        <div class="input flex flex-column items-center">
+            <input type="text" name="user_name" id="user_name" required placeholder="Username">
+            <input type="email" id="email" name="email" required placeholder="E-mail">
+            <input type="password" name="password" id="password" required placeholder="Password">
+            <input type="password" name="confirm_password" id="confirm_password" required placeholder="Confirm Password">
+        </div>
+        <div class="button flex items-center space-between">
+            <span>Already a member <a href="/login">Login here</a>.</span>
+            <button type="submit">Login</button>
+        </div>
+    </div>
+</form> 
+
+    </main>
+
+
+
+</body>
+<script src="/js/signup.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Newcomer!'],
+      typeSpeed: 80,
+    });
+</script>
+</html>

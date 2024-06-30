@@ -1,0 +1,29 @@
+.usergame-card{
+    padding: 0px 5px;
+    display: flex;
+    height: fit-content;
+    background-color: #1b262f;
+    gap: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.usergame-card:hover{
+    background-color: #0c1b2538;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out 0ms;
+    cursor: pointer;
+}
+
+.usergame-card h3{
+    margin: 0;
+    padding: 0;
+}
+
+.cimg{
+    border-radius: 10px;
+    width: 160px;
+    height: 90px;
+    margin-top: 5px;
+
+}

@@ -1,0 +1,167 @@
+.cover{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.image{
+    width: inherit;
+    object-fit:cover;
+    filter: opacity(0.5);
+
+}
+
+#trailer{
+    position: absolute;
+    width: 70%;
+    height: 65%;
+    z-index: 2;
+    left: 16%;
+    top: 16%;
+    opacity: 1;
+}
+#trailer:hover{
+    opacity: 1;
+    transition: all 0.5s ease-out 1ms;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.grid-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.header {
+    color: black;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+#game-title{
+    font-size: 40px;
+}
+
+.details-left{
+    max-width: 50%;
+    border-right: 2px solid black;
+    padding-right: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 15px;
+}
+
+.details-middle{
+    min-width: 20%;
+    padding-left: 5px;
+}
+
+
+.details-right{
+    width: 100%;
+    justify-content: space-around;
+    min-height: 200px;
+}
+
+
+#game-title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: beige;
+    text-shadow: 10px saddlebrown;
+}
+
+#game-description{
+    margin-top: 0px;
+}
+
+#game-description::first-letter{
+    color: rgb(45, 110, 136);
+    font-size: 48px;
+    font-style: italic;
+    padding-left: 20px;
+
+}
+
+#game-metacritic{
+    font-size: 20px;
+    background-color: rgb(55, 151, 55);
+    padding: 15px;
+}
+
+.metacritic-logo{
+    width: 200px;
+    height: 50px;
+    object-fit: cover;
+    background-color: rgba(39, 209, 209, 0.103);
+}
+
+.esrb-logo{
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    display: inline-block;
+    margin-right: 7px;
+    border: 1px solid;
+}
+.esrb-logo > *{
+    display: inline-block;
+    transform: rotate(-30deg);
+    padding: 1px 6px;
+}
+
+.add-comment{
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:800px){
+    .details{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .details-left{
+        max-width: 100%;
+        border: none;
+        padding-right: 0;
+    }
+
+    .details-right{
+        max-width: 400px;
+    }
+    
+}
+
+
+@media screen and (max-width:590px) {
+    #game-title{
+        font-size: 30px;
+    }
+    .grid-container {
+        font-size: 9px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        gap: 5px;
+        padding: 5px;
+        border: 1px solid #ddd;
+    }
+    .grid-item {
+        border: 1px solid #ddd;
+        padding: 5px;
+    }
+    .header {
+        color: black;
+        font-weight: bold;
+        background-color: #f0f0f0;
+    }
+    
+}
+
+
+
